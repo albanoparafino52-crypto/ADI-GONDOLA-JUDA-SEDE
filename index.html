@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Igreja Assembleia de Deus Internacional</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+/* MENU */
+header{
+    background:#8426e9;
+    padding:15px;
+    text-align:center;
+}
+header h1{
+    margin:0;
+    color:gold;
+    text-decoration:underline;
+}
+nav{
+    margin-top:10px;
+}
+nav a{
+    color:white;
+    margin:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover{
+    color:gold;
+}
+
+/* SEÇÕES */
+section{
+    padding:40px;
+}
+
+/* BOAS VINDAS */
+.hero{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+}
+.hero img{
+    width:45%;
+    border-radius:15px;
+}
+.hero-text{
+    width:50%;
+}
+
+/* CARTÕES */
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+.card{
+    background:#ffffff10;
+    padding:20px;
+    border-radius:15px;
+    width:250px;
+    text-align:center;
+}
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* GALERIA */
+.gallery img{
+    width:200px;
+    margin:10px;
+    border-radius:10px;
+}
+
+/* BOTÃO */
+button{
+    padding:10px 20px;
+    border:none;
+    background:gold;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:10px;
+}
+
+/* RESPONSIVO */
+@media(max-width:768px){
+    .hero img, .hero-text{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Assembleia de Deus Internacional</h1>
+<nav>
+<a href="#">Início</a>
+<a href="#">Pastores</a>
+<a href="#">Juventude</a>
+<a href="#">Ofertas</a>
+<a href="#">Eventos</a>
+</nav>
+</header>
+
+<!-- BOAS VINDAS -->
+<section class="hero">
+<div class="hero-text">
+<h2>Seja Bem-vindo!</h2>
+<p><b>“Porque Deus amou o mundo de tal maneira que deu o seu Filho unigénito…”</b> - João 3:16</p>
+<p><b>“O Senhor é o meu pastor, nada me faltará.”</b> - Salmos 23:1</p>
+<p><b>“Posso todas as coisas naquele que me fortalece.”</b> - Filipenses 4:13</p>
+</div>
+
+<img src="https://images.unsplash.com/photo-1507692049790-de58290a4334">
+</section>
+
+<!-- PASTORES -->
+<section>
+<h2 style="text-align:center; text-decoration:underline; color:gold;">Nossos Pastores</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://randomuser.me/api/portraits/men/1.jpg">
+<h3>Pastor João</h3>
+<p>Categoria: Pastor Sênior</p>
+<p>Experiência: 20 anos</p>
+<p>Ano: 2005</p>
+</div>
+
+<div class="card">
+<img src="https://randomuser.me/api/portraits/men/2.jpg">
+<h3>Pastor Carlos</h3>
+<p>Categoria: Evangelista</p>
+<p>Experiência: 15 anos</p>
+<p>Ano: 2010</p>
+</div>
+
+<div class="card">
+<img src="https://randomuser.me/api/portraits/women/3.jpg">
+<h3>Pastora Maria</h3>
+<p>Categoria: Missionária</p>
+<p>Experiência: 18 anos</p>
+<p>Ano: 2007</p>
+</div>
+
+<div class="card">
+<img src="https://randomuser.me/api/portraits/men/4.jpg">
+<h3>Pastor Pedro</h3>
+<p>Categoria: Jovens</p>
+<p>Experiência: 10 anos</p>
+<p>Ano: 2015</p>
+</div>
+
+</div>
+</section>
+
+<!-- MINISTÉRIOS -->
+<section>
+<h2 style="text-align:center; color:gold;">Ministérios</h2>
+<div class="cards">
+<div class="card"><h3>Juventude</h3></div>
+<div class="card"><h3>Pais</h3></div>
+<div class="card"><h3>Mães</h3></div>
+<div class="card"><h3>Escola Dominical</h3></div>
+</div>
+</section>
+
+<!-- OFERTAS -->
+<section>
+<h2 style="text-align:center; color:gold;">Ofertas e Dízimos</h2>
+
+<p>Envie suas contribuições:</p>
+
+<ul>
+<li>M-Pesa: 843753174</li>
+<li>E-Mola: 878348735</li>
+<li>mKesh (BIM): 223351191</li>
+</ul>
+
+<button onclick="alert('Pagamento simulado realizado com sucesso!')">Simular Pagamento</button>
+
+</section>
+
+<!-- LOUVOR -->
+<section>
+<h2 style="text-align:center; color:gold;">Louvor e Adoração</h2>
+
+<audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+<audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"></audio>
+<audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"></audio>
+<audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"></audio>
+
+</section>
+
+<!-- YOUTUBE -->
+<section>
+<h2 style="text-align:center; color:gold;">Gospel no YouTube</h2>
+
+<iframe width="300" height="200" src="https://www.youtube.com/embed/ktvTqknDobU"></iframe>
+<iframe width="300" height="200" src="https://www.youtube.com/embed/l482T0yNkeo"></iframe>
+
+</section>
+
+<!-- GALERIA -->
+<section>
+<h2 style="text-align:center; color:gold;">Galeria de Irmãos</h2>
+
+<div class="gallery">
+<img src="https://randomuser.me/api/portraits/men/5.jpg">
+<img src="https://randomuser.me/api/portraits/women/6.jpg">
+<img src="https://randomuser.me/api/portraits/men/7.jpg">
+<img src="https://randomuser.me/api/portraits/women/8.jpg">
+</div>
+
+</section>
+
+<!-- EVENTOS -->
+<section>
+<h2 style="text-align:center; color:gold;">Próximos Eventos</h2>
+<ul>
+<li>Culto de Domingo - 10:00</li>
+<li>Vigília - Sexta 22:00</li>
+<li>Conferência Jovem</li>
+</ul>
+</section>
+
+<!-- ESTUDO BÍBLICO -->
+<section>
+<h2 style="text-align:center; color:gold;">Estudo Bíblico</h2>
+<p>Participe dos nossos estudos semanais e fortaleça sua fé.</p>
+</section>
+
+<footer style="text-align:center; padding:20px; background:black;">
+<p>© 2026 Igreja Assembleia de Deus Internacional</p>
+</footer>
+
+</body>
+</html>
